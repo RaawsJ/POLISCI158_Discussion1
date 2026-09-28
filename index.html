@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jeremy Roz</title>
+<style>
+  :root {
+    --black: #000000;
+    --white: #ffffff;
+    --red: #8b0000;
+    --red-bright: #c62828;
+    --grey: #cfcfcf;
+  }
+
+  * { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--black);
+    color: var(--white);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+
+  main {
+    max-width: 34rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 4rem;
+  }
+
+  header {
+    padding-bottom: 2rem;
+    border-bottom: 3px solid var(--red);
+  }
+
+  .school {
+    margin-bottom: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+  }
+
+  .school img { display: block; height: 48px; width: auto; }
+
+  .wordmark {
+    color: var(--white);
+    font-size: 1.1rem;
+    letter-spacing: 0.04em;
+    padding-left: 0.75rem;
+    border-left: 3px solid var(--red-bright);
+  }
+
+  h1 {
+    margin: 0 0 0.35rem;
+    font-size: 2.5rem;
+    line-height: 1.1;
+    font-weight: normal;
+    letter-spacing: 0.01em;
+  }
+
+  .tagline {
+    margin: 0;
+    color: var(--grey);
+    font-style: italic;
+  }
+
+  section {
+    padding: 1.75rem 0;
+    border-bottom: 1px solid var(--red);
+  }
+
+  section:last-of-type { border-bottom: none; }
+
+  h2 {
+    margin: 0 0 0.6rem;
+    font-size: 1.25rem;
+    font-weight: normal;
+    color: var(--red-bright);
+  }
+
+  p { margin: 0; }
+
+  ul {
+    margin: 0;
+    padding-left: 1.2rem;
+  }
+
+  li { margin: 0.25rem 0; }
+  li::marker { color: var(--red-bright); }
+
+  footer {
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--red);
+    color: var(--grey);
+    font-size: 0.9rem;
+  }
+
+  a {
+    color: var(--white);
+    text-decoration-color: var(--red-bright);
+    text-underline-offset: 3px;
+  }
+
+  a:focus-visible {
+    outline: 2px solid var(--white);
+    outline-offset: 3px;
+  }
+
+  @media (max-width: 420px) {
+    main { padding: 2.5rem 1.25rem 3rem; }
+    h1 { font-size: 2rem; }
+    body { font-size: 1rem; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <div class="school">
+      <!-- To use the official Stanford logo, save it next to this file as stanford-logo.png
+           and remove the comment marks around the next line. -->
+      <!-- <img src="stanford-logo.png" alt="Stanford University logo" height="48"> -->
+      <span class="wordmark">Stanford University</span>
+    </div>
+    <h1>Jeremy Roz</h1>
+    <p class="tagline">Master's student in International Policy</p>
+  </header>
+
+  <section>
+    <h2>Major</h2>
+    <p>Master's in International Policy, Stanford University.</p>
+  </section>
+
+  <section>
+    <h2>Interests</h2>
+    <ul>
+      <li>National security</li>
+      <li>Military innovation</li>
+      <li>Technological integration into maneuver elements</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Project interest</h2>
+    <p>To be determined. Likely focus: how the U.S. Army can use AI to enable safe warfare.</p>
+  </section>
+
+</main>
+</body>
+</html>
