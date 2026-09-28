@@ -1,195 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Jeremy Roz</title>
-<style>
-  :root {
-    --black: #000000;
-    --white: #ffffff;
-    --red: #8b0000;
-    --red-bright: #c62828;
-    --grey: #cfcfcf;
-  }
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jeremy Roz</title>
 
-  * { box-sizing: border-box; }
+  <style>
+    :root {
+      --black: #000000;
+      --white: #ffffff;
+      --red: #8b0000;
+      --red-bright: #c62828;
+      --grey: #cfcfcf;
+    }
 
-  html { -webkit-text-size-adjust: 100%; }
+    * { box-sizing: border-box; }
 
-  body {
-    margin: 0;
-    background: var(--black);
-    color: var(--white);
-    font-family: Georgia, "Times New Roman", serif;
-    font-size: 1.0625rem;
-    line-height: 1.65;
-  }
+    html { -webkit-text-size-adjust: 100%; }
 
-  main {
-  max-width: 52.5rem;   /* was 34rem */
-  margin: 0 auto;
-  padding: 3.5rem 1.5rem 4rem;
-}
+    body {
+      margin: 0;
+      background: var(--black);
+      color: var(--white);
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 1.0625rem;
+      line-height: 1.65;
+    }
 
-  header {
-    padding-bottom: 2rem;
-    border-bottom: 3px solid var(--red);
-  }
+    main {
+      max-width: 52.5rem;
+      margin: 0 auto;
+      padding: 3.5rem 1.5rem 4rem;
+    }
 
-  .school {
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-  }
+    header {
+      padding-bottom: 2rem;
+      border-bottom: 3px solid var(--red);
+    }
 
-  .school img { display: block; height: 48px; width: auto; }
+    .school {
+      margin-bottom: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
 
-  .wordmark {
-    color: var(--white);
-    font-size: 1.1rem;
-    letter-spacing: 0.04em;
-    padding-left: 0.75rem;
-    border-left: 3px solid var(--red-bright);
-  }
+    .school img {
+      display: block;
+      height: 48px;
+      width: auto;
+    }
 
-  h1 {
-    margin: 0 0 0.35rem;
-    font-size: 2.5rem;
-    line-height: 1.1;
-    font-weight: normal;
-    letter-spacing: 0.01em;
-  }
+    .wordmark {
+      color: var(--white);
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      padding-left: 0.75rem;
+      border-left: 3px solid var(--red-bright);
+    }
 
-  .tagline {
-    margin: 0;
-    color: var(--grey);
-    font-style: italic;
-  }
+    h1 {
+      margin: 0 0 0.35rem;
+      font-size: 2.5rem;
+      line-height: 1.1;
+      font-weight: normal;
+      letter-spacing: 0.01em;
+    }
 
-  section {
-    padding: 1.75rem 0;
-    border-bottom: 1px solid var(--red);
-  }
+    .tagline {
+      margin: 0;
+      color: var(--grey);
+      font-style: italic;
+    }
 
-  section:last-of-type { border-bottom: none; }
+    section {
+      padding: 1.75rem 0;
+      border-bottom: 1px solid var(--red);
+    }
 
-  h2 {
-    margin: 0 0 0.6rem;
-    font-size: 1.25rem;
-    font-weight: normal;
-    color: var(--red-bright);
-  }
+    section:last-of-type { border-bottom: none; }
 
-  p { margin: 0; }
+    h2 {
+      margin: 0 0 0.6rem;
+      font-size: 1.25rem;
+      font-weight: normal;
+      color: var(--red-bright);
+    }
 
-  ul {
-    margin: 0;
-    padding-left: 1.2rem;
-  }
+    p { margin: 0; }
 
-  li { margin: 0.25rem 0; }
-  li::marker { color: var(--red-bright); }
+    ul {
+      margin: 0;
+      padding-left: 1.2rem;
+    }
 
-  footer {
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--red);
-    color: var(--grey);
-    font-size: 0.9rem;
-  }
+    li { margin: 0.25rem 0; }
+    li::marker { color: var(--red-bright); }
 
-  a {
-    color: var(--white);
-    text-decoration-color: var(--red-bright);
-    text-underline-offset: 3px;
-  }
+    footer {
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--red);
+      color: var(--grey);
+      font-size: 0.9rem;
+    }
 
-  a:focus-visible {
-    outline: 2px solid var(--white);
-    outline-offset: 3px;
-  }
+    a {
+      color: var(--white);
+      text-decoration-color: var(--red-bright);
+      text-underline-offset: 3px;
+    }
 
-  @media (max-width: 420px) {
-    main { padding: 2.5rem 1.25rem 3rem; }
-    h1 { font-size: 2rem; }
-    body { font-size: 1rem; }
-  }
-</style>
+    a:focus-visible {
+      outline: 2px solid var(--white);
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 420px) {
+      main { padding: 2.5rem 1.25rem 3rem; }
+      h1 { font-size: 2rem; }
+      body { font-size: 1rem; }
+    }
+  </style>
 </head>
+
 <body>
-<main>
+  <main>
+    <header>
+      <div class="school">
+        <img src="Stanford Logo Black Bg.png"
+             alt="Stanford University logo"
+             height="48">
+        <span class="wordmark">Stanford University</span>
+      </div>
 
-  <header>
-    <div class="school">
-      <!-- To use the official Stanford logo, save it next to this file as stanford-logo.png
-           and remove the comment marks around the next line. -->
-      <!-- <img src="stanford-logo.png" alt="Stanford University logo" height="48"> -->
-      <span class="wordmark">Stanford University</span>
-    </div>
-    <h1>Jeremy Roz</h1>
-    <p class="tagline">Master's student in International Policy</p>
-  </header>
+      <h1>Jeremy Roz</h1>
+      <p class="tagline">Master's student in International Policy</p>
+    </header>
 
-  <section>
-    <h2>Major</h2>
-    <p>Master's in International Policy, Stanford University.</p>
-  </section>
+    <section>
+      <h2>Major</h2>
+      <p>Master's in International Policy, Stanford University.</p>
+    </section>
 
-  <section>
-    <h2>Interests</h2>
-    <ul>
-      <li>National security</li>
-      <li>Military innovation</li>
-      <li>Technological integration into maneuver elements</li>
-    </ul>
-  </section>
+    <section>
+      <h2>Interests</h2>
+      <ul>
+        <li>National security</li>
+        <li>Military innovation</li>
+        <li>Technological integration into maneuver elements</li>
+      </ul>
+    </section>
 
-  <section>
-  <h2>Project interest</h2>
-  <p>
-    How effectively is the U.S. Army integrating artificial intelligence
-    across echelons, and what operational benefits, institutional costs,
-    and adoption barriers shape the gap between Soldier use and civilian
-    use of generative AI?
-  </p>
-</section>
+    <section>
+      <h2>Project interest</h2>
+      <p>
+        How effectively is the U.S. Army integrating artificial intelligence
+        across echelons, and what operational benefits, institutional costs,
+        and adoption barriers shape the gap between Soldier use and civilian
+        use of generative AI?
+      </p>
+    </section>
 
-<section>
-  <h2>Policy questions</h2>
-  <ul>
-    <li>
-      What benefits, risks, and organizational tradeoffs has AI integration
-      created for the U.S. Army, and which policies would enable responsible
-      adoption at scale?
-    </li>
-    <li>
-      How does AI adoption vary among junior enlisted Soldiers, NCOs,
-      warrant officers, company-grade officers, and field-grade officers,
-      and how do those patterns compare with U.S. civilian adoption?
-    </li>
-    <li>
-      To what extent do security restrictions, approved-tool availability,
-      digital literacy, leadership climate, and perceived usefulness explain
-      differences in generative-AI adoption across Army echelons relative
-      to the U.S. public?
-    </li>
-  </ul>
-</section>
+    <section>
+      <h2>Policy questions</h2>
+      <ul>
+        <li>
+          What benefits, risks, and organizational tradeoffs has AI integration
+          created for the U.S. Army, and which policies would enable responsible
+          adoption at scale?
+        </li>
+        <li>
+          How does AI adoption vary among junior enlisted Soldiers, NCOs,
+          warrant officers, company-grade officers, and field-grade officers,
+          and how do those patterns compare with U.S. civilian adoption?
+        </li>
+        <li>
+          To what extent do security restrictions, approved-tool availability,
+          digital literacy, leadership climate, and perceived usefulness explain
+          differences in generative-AI adoption across Army echelons relative
+          to the U.S. public?
+        </li>
+      </ul>
+    </section>
 
-<section>
-  <h2>Study boundaries</h2>
-  <p>"AI Adoption" has two distinct meanings in this study:</p>
-  <ul>
-    <li>
-      Institutional adoption: The Army fields AI-enabled systems for
-      intelligence, logistics, maintenance, training, targeting, and
-      administration.
-    </li>
-    <li>
-      Individual adoption: Soldiers personally use approved, or potentially
-      unapproved, AI tools for work tasks, education, writing, coding,
-      analysis, or planning.
-    </li>
-  </ul>
-</section>
+    <section>
+      <h2>Study boundaries</h2>
+      <p>“AI adoption” has two distinct meanings in this study:</p>
+      <ul>
+        <li>
+          Institutional adoption: The Army fields AI-enabled systems for
+          intelligence, logistics, maintenance, training, targeting, and
+          administration.
+        </li>
+        <li>
+          Individual adoption: Soldiers personally use approved, or potentially
+          unapproved, AI tools for work tasks, education, writing, coding,
+          analysis, or planning.
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
